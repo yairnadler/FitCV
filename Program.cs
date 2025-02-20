@@ -128,8 +128,8 @@ public class WebScraper
             var loginButton = driver.FindElement(By.XPath("//button[@type='submit']"));
 
             // Enter credentials (replace with your LinkedIn username and password)
-            usernameField.SendKeys("yair.nadler7@gmail.com");
-            passwordField.SendKeys("1313178696Yn!");
+            usernameField.SendKeys("username");
+            passwordField.SendKeys("password");
 
             // Click on the login button
             loginButton.Click();
