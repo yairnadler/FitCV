@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitCV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+699d040097c2a38a0ac6364ad04011c100f8b1e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0905814f99bc6724bdfb5928410b3c630c993d91")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitCV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitCV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
