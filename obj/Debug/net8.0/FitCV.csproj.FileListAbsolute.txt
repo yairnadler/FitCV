@@ -31,3 +31,5 @@ C:\Users\yairn\Documents\CS_Projects\.NET\FitCV\FitCV\bin\Debug\net8.0\WebDriver
 C:\Users\yairn\Documents\CS_Projects\.NET\FitCV\FitCV\obj\Debug\net8.0\FitCV.csproj.AssemblyReference.cache
 C:\Users\yairn\Documents\CS_Projects\.NET\FitCV\FitCV\obj\Debug\net8.0\FitCV.csproj.Up2Date
 C:\Users\yairn\Documents\CS_Projects\.NET\FitCV\FitCV\bin\Debug\net8.0\HtmlAgilityPack.dll
+C:\Users\yairn\Documents\CS_Projects\.NET\FitCV\FitCV\bin\Debug\net8.0\DotNetEnv.dll
+C:\Users\yairn\Documents\CS_Projects\.NET\FitCV\FitCV\bin\Debug\net8.0\Sprache.dll

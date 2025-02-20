@@ -1,8 +1,8 @@
-using Microsoft.Extensions.Options;
-using Microsoft.VisualBasic;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
+using DotNetEnv;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -107,15 +107,18 @@ public class Skill
 public class WebScraper
 {
     public string Url { get; set; }
-
+    
     public WebScraper(string url)
     {
+        Env.Load();
         Url = url;
     }
 
     public string GetJobDescription()
     {
         var options = new ChromeOptions();
+        string? USERNAME = Environment.GetEnvironmentVariable("USERNAME");
+        string? PASSWORD = Environment.GetEnvironmentVariable("PASSWORD");
         options.AddArgument("start-maximized");
 
         using (var driver = new ChromeDriver(options))
@@ -128,8 +131,8 @@ public class WebScraper
             var loginButton = driver.FindElement(By.XPath("//button[@type='submit']"));
 
             // Enter credentials (replace with your LinkedIn username and password)
-            usernameField.SendKeys("username");
-            passwordField.SendKeys("password");
+            usernameField.SendKeys(USERNAME);
+            passwordField.SendKeys(PASSWORD);
 
             // Click on the login button
             loginButton.Click();
