@@ -1,0 +1,72 @@
+POST http://localhost:3000/api/skills
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "C#",
+    "proficiency": "Intermediate"
+}
+
+###
+
+POST http://localhost:3000/api/skills
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "JavaScript",
+    "proficiency": "Intermediate"
+}
+
+###
+
+PUT http://localhost:3000/api/skills/2
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "JavaScript",
+    "proficiency": "Advanced"
+}
+
+###
+
+DELETE http://localhost:3000/api/skills/1
+
+###
+
+POST http://localhost:3000/api/skills/write
+
+###
+
+GET http://localhost:3000/api/skills
+
+###
+
+POST http://localhost:3000/api/linkedin-jobs/4160760417
+
+###
+
+GET http://localhost:3000/api/linkedin-jobs/4160760417
+
+###
+
+GET http://localhost:3000/api/github/projects
+Content-Type: application/json
+
+{
+    "githubUsername": "yairnadler"
+}
+
+###
+
+POST http://localhost:3000/api/github/projects
+Content-Type: application/json
+
+{
+    "githubUsername": "yairnadler"
+}
+
+###
+
+GET http://localhost:3000/api/github/projects/0
