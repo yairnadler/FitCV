@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  github-projects:
+    build:
+      context: ./github-projects
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./github-projects/src:/usr/src/app/src
+    networks:
+      - my-network
+
+  linkedin-jobs:
+    build:
+      context: ./linkedin-jobs
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./linkedin-jobs/src:/usr/src/app/src
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge

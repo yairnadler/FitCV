@@ -1,57 +1,12 @@
-POST http://localhost:3000/api/skills
-Content-Type: application/json
-
-{
-    "id": 1,
-    "name": "C#",
-    "proficiency": "Intermediate"
-}
+POST http://localhost:5002/api/linkedin-jobs/4160760417
 
 ###
 
-POST http://localhost:3000/api/skills
-Content-Type: application/json
-
-{
-    "id": 2,
-    "name": "JavaScript",
-    "proficiency": "Intermediate"
-}
+GET http://localhost:5002/api/linkedin-jobs/4160760417
 
 ###
 
-PUT http://localhost:3000/api/skills/2
-Content-Type: application/json
-
-{
-    "id": 2,
-    "name": "JavaScript",
-    "proficiency": "Advanced"
-}
-
-###
-
-DELETE http://localhost:3000/api/skills/1
-
-###
-
-POST http://localhost:3000/api/skills/write
-
-###
-
-GET http://localhost:3000/api/skills
-
-###
-
-POST http://localhost:3000/api/linkedin-jobs/4160760417
-
-###
-
-GET http://localhost:3000/api/linkedin-jobs/4160760417
-
-###
-
-GET http://localhost:3000/api/github/projects
+GET http://localhost:5001/api/github/projects
 Content-Type: application/json
 
 {
@@ -60,7 +15,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/api/github/projects
+POST http://localhost:5001/api/github/projects
 Content-Type: application/json
 
 {
@@ -69,4 +24,4 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3000/api/github/projects/0
+GET http://localhost:5001/api/github/projects/2

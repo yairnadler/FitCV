@@ -2,11 +2,12 @@
   "name": "fitcv-server",
   "version": "1.0.0",
   "description": "server side for the fitCV web based app",
-  "main": "index.js",
-  "type": "module",
+  "main": "github-projects/index.js",
   "scripts": {
-    "test": "test"
+    "start": "node githubProjects.js",
+    "dev": "nodemon githubProjects.js"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "dependencies": {
