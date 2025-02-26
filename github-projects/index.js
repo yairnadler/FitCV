@@ -1,11 +1,6 @@
 import express, { json } from "express";
 import morgan from "morgan";
-import { Octokit } from "@octokit/rest";
-import axios from "axios";
-import dotenv from "dotenv";
 import router from "./routes/routes.js";
-
-dotenv.config();
 
 const app = express();
 const PORT = 5001;
