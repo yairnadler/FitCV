@@ -1,0 +1,24 @@
+{
+  "name": "fitcv-server",
+  "version": "1.0.0",
+  "description": "server side for the fitCV web based app",
+  "main": "build-cv/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.22.0",
+    "@octokit/rest": "^21.1.1",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "puppeteer": "^24.2.1"
+  }
+}

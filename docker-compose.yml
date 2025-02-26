@@ -23,6 +23,17 @@ services:
     networks:
       - my-network
 
+  build-cv:
+    build:
+      context: ./build-cv
+      dockerfile: Dockerfile
+    ports:
+      - "5003:5003"
+    volumes:
+      - ./build-cv/src:/usr/src/app/src
+    networks:
+      - my-network
+
 networks:
   my-network:
     driver: bridge

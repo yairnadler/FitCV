@@ -1,5 +1,4 @@
 #Dockerfile
-#Dockerfile
 FROM node:latest
 
 # Create app directory
@@ -13,6 +12,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-EXPOSE 5001
+EXPOSE 5003
 
 CMD ["node", "index.js"]
